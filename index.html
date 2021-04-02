@@ -4,249 +4,243 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Wooder</title>
+    <link
+      rel="shortcut icon"
+      href="./favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
   </head>
+
   <body>
     <header>
-      <!-- Begin: header -->
       <div class="container-fluid">
-        <!-- Logo -->
         <div class="logo">
-          <a href="#">
-            <img src="img/logo.png" alt="Wooder" />
-            <h1 class="hidden">Wooder</h1>
-          </a>
+          <a href=""><img src="img/logo.png" alt="Wooder" /></a>
+          <h1 class="hidden">Wooder</h1>
         </div>
-        <!-- Logo -->
         <ul class="menu">
-          <li><a href="#slider">Home</a></li>
-          <li><a href="#products">Products</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Product</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#news">News</a></li>
         </ul>
-        <!-- Right -->
         <div class="right">
           <div class="lang">
             <div class="lang__current">
               <span>EN</span>
-              <i><img src="img/drop-arrow.svg" alt="" /></i>
+              <i><img src="img/icon_chevron_down.svg" alt="drop-down" /></i>
             </div>
             <div class="lang__option">
-              <a href="javascript:void(0)">VN</a>
-              <a href="javascript:void(0)">JP</a>
-              <a href="javascript:void(0)">AU</a>
+              <a href="#EN">EN</a>
+              <a href="#VN">VN</a>
+              <a href="#JP">JP</a>
             </div>
           </div>
-          <div class="btnmenu"><span></span></div>
+          <a href="#" class="btnMenu"><span></span></a>
         </div>
+        <!-- Menu Mobile -->
+        <div class="nav">
+          <ul>
+            <li><a href="#home" class="">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#news">News</a></li>
+          </ul>
+        </div>
+        <!-- End Menu Mobile -->
       </div>
-      <!-- End: header -->
     </header>
-    <!-- Menu-mobile -->
-    <nav class="nav">
-      <ul>
-        <li><a href="#slider">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#news">News</a></li>
-      </ul>
-    </nav>
 
-    <div class="mainwrapper homepage">
+    <main class="mainwrapper homepage">
       <section class="slider">
-        <!-- Slider__item-wrap -->
         <div class="slider__item-wrap">
-          <div class="slider__item-active">
+          <div class="slider__item">
             <div class="slider__item-text">
-              <h2 class="title">Wooder</h2>
-              <a href="#" class="btn btnmain --border --white"
-                >Learn more
-                <i alt=""></i>
-              </a>
+              <h2>Wooder</h2>
+              <a href="#" class="btn btnMain"
+                >Learn More <i><img src="img/arrowLeft.png" alt="" /></i
+              ></a>
             </div>
-            <img src="img/slide1.jpg" alt="slider__item-img" />
+            <img src="img/slide/slide-01.jpg" alt="" class="slider__item img" />
           </div>
-
-          <!-- <div class="slider__item-active">
-            <div class="slider__item-text">
-              <h2 class="title">Wooder</h2>
-              <a href="#" class="btn btnmain --border --white"
-                >Learn more
-                <i alt=""></i>
-              </a>
-            </div>
-            <img src="img/slide1.jpg" alt="slider__item-img">
-          </div> -->
-
-          <!-- <div class="slider__item-active">
-            <div class="slider__item-text">
-              <h2 class="title">Wooder</h2>
-              <a href="#" class="btn btnmain --border --white"
-                >Learn more
-                <i alt=""></i>
-              </a>
-            </div>
-            <img src="img/slide1.jpg" alt="slider__item-img">
-          </div> -->
+          <!-- <div class="slider__item">
+                    <div class="slider__item-text">
+                        <h2>Wooder2</h2>
+                        <a href="#" class="btn --border --white">Learn More<img src="img/arrowRight.png" alt=""></a>
+                    </div>
+                    <img src="img/slide/slide-03.jpg" alt="" class="slider__item img">
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item-text">
+                        <h2>Wooder3</h2>
+                        <a href="#" class="btn --border --white">Learn More<img src="img/arrowRight.png" alt=""></a>
+                    </div>
+                    <img src="img/slide/slide-01.jpg" alt="" class="slider__item img">
+                </div> -->
         </div>
-        <!-- Slider__bottom -->
-        <div class="slider__bottom">
+        <div class="slider__ctrl">
           <div class="container-fluid">
-            <!-- Paging -->
-            <div class="paging">
-              <div class="paging__number">01</div>
-              <div class="paging__dotted">
-                <ul>
-                  <li class="paging__dotted-active"></li>
-                  <li class="paging__dotted-non-active"></li>
-                  <li class="paging__dotted-non-active"></li>
-                </ul>
+            <div class="slider__ctrl-paging">
+              <div class="number">01</div>
+              <div class="dot">
+                <ol>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ol>
               </div>
             </div>
-            <!-- Mouse -->
-            <div class="mouse">
-              <div class="mouse__img">
-                <i><img src="img/mouse.png" alt="" /></i>
-              </div>
-              <div class="mouse__arrow">
-                <i><img src="img/down-arrow.png" alt="" /></i>
-              </div>
+            <div class="slider__ctrl-dropDown">
+              <div class="mouse"><img src="img/mouse.png" alt="mouse" /></div>
+              <div class="down"><img src="img/down.png" alt="downArrow" /></div>
             </div>
-            <!-- Control -->
-            <div class="control">
-              <div class="control__btn --prev">
-                <img src="img/arrow-pre.png" alt="" />
+            <div class="slider__ctrl-btnctrl">
+              <div class="btnctl arrowRight">
+                <i><img src="img/arrowRight.png" alt="arrowRight" /></i>
               </div>
-              <div class="control__btn --next">
-                <img src="img/arrow-pre.png" alt="" />
+              <div class="btnctl arrowLeft">
+                <i><img src="img/arrowLeft.png" alt="arrowLeft" /></i>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <section class="products pd">
         <div class="container">
-          <!-- Furniture -->
-          <div class="furniture">
-            <div class="furniture__text">
-              <h2 class="title">Furniture</h2>
+          <div class="product">
+            <div class="product__text textBox">
+              <h2 class="titleMain">Furniture</h2>
               <div class="text">
                 <p class="des">
-                  Wooders utilizes materials otherwise left behind. redered
-                  useless in their original intent. By creating news pieces made
+                  Wooder utilizes materials otherwise left behind, rendered
+                  useless in their original intent. By creating new pieces made
+                  of reclaimed barnwood
                 </p>
-                <a href="#" class="btn"
-                  >Learn more
-                  <img src="img/arrow.png" alt="" />
-                </a>
+                <a href="#" class="btnpr"
+                  >Learn More<img src="img/arrow.png" alt=""
+                /></a>
               </div>
             </div>
-            <div class="furniture__img">
-              <img src="img/fur.png" alt="" />
+            <div class="product__img">
+              <img src="img/banner/img-01.jpg" alt="" />
             </div>
           </div>
-          <!-- Furniture --decor -->
-          <div class="furniture --decor">
-            <div class="furniture__text">
-              <h2 class="title">Decor</h2>
+          <div class="product --reverse">
+            <div class="product__text textBox --tRight">
+              <h2 class="titleMain">Decor</h2>
               <div class="text">
                 <p class="des">
-                  Wooders utilizes materials otherwise left behind. redered
-                  useless in their original intent. By creating news pieces made
+                  We make all types of wooden decor as per design given by
+                  Architect,Interior designer, contractor which is suitable your
+                  premises.
                 </p>
-                <a href="#" class="btn"
-                  >Learn more
-                  <img src="img/arrow.png" alt="" />
-                </a>
+                <a href="#" class="btnpr"
+                  >Learn More<img src="img/arrow.png" alt=""
+                /></a>
               </div>
             </div>
-            <div class="furniture__img">
-              <img src="img/fur.png" alt="" />
+            <div class="product__img">
+              <img src="img/banner/img-02.jpg" alt="" />
             </div>
           </div>
         </div>
       </section>
-      <section class="videos">
-        <div class="furniture">
-          <div class="furniture --textcenter">
-            <h2 class="title">WOODER - IS QUALITY</h2>
-            <p class="des">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusamus, blanditiis fugit unde sunt dolorem delectus labore est
-              nam commodi ipsum rem
-            </p>
-          </div>
-        </div>
-        <div class="video__item-wrap">
-          <div class="video__item">
-            <div class="video__item-img">
-              <img src="img/play_button" alt="" />
-              <div class="play_button">
-                <img src="img/play.png" alt="" />
-              </div>
-            </div>
-            <p class="video__item-caption">Innovation Design</p>
-          </div>
-          <div class="video__item">
-            <div class="video__item-img">
-              <img src="img/play_button" alt="" />
-              <div class="play_button">
-                <img src="img/play.png" alt="" />
-              </div>
-            </div>
-            <p class="video__item-caption">High-level Skills</p>
-          </div>
-          <div class="video__item">
-            <div class="video__item-img">
-              <img src="img/play_button" alt="" />
-              <div class="play_button">
-                <img src="img/play.png" alt="" />
-              </div>
-            </div>
-            <p class="video__item-caption">Innovation Design</p>
-          </div>
-        </div>
-      </section>
-      <section class="info">
+      <section class="video pd">
         <div class="container">
-          <div class="furniture__text">
-            <h2 class="title-yellow">We do design of any complexity</h2>
-            <p class="des-white">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-              delectus ullam culpa accusantium, cupiditate nam repudiandae
-              doloremque deserunt vel, aperiam sunt quaerat consequuntur
-              veritatis ratione inventore nisi et dolor illo.
-            </p>
-            <a href="#" class="btn --video"
-              ><img
-                src="img/play-button.svg"
-                alt=""
-                class="icon-play"
-              />video</a
-            >
+          <div class="intro__center">
+            <div class="textBox --textCenter">
+              <h2 class="titleMain">wooder – is quality</h2>
+              <p class="des">
+                We create unique design objects made of rare wood, specially
+                under the order. Look at the short video about our work.
+              </p>
+            </div>
+            <div class="video__item--wrap">
+              <div class="video__item">
+                <div class="video__item-img">
+                  <img src="img/video/video-01.jpg" alt="" />
+                  <div class="playButon">
+                    <img src="img/btn-video.svg" alt="" />
+                  </div>
+                </div>
+                <p class="video__item-caption">Innovative Design</p>
+              </div>
+              <div class="video__item">
+                <div class="video__item-img">
+                  <img src="img/video/video-02.jpg" alt="" />
+                  <div class="playButon">
+                    <img src="img/btn-video.svg" alt="" />
+                  </div>
+                </div>
+                <p class="video__item-caption">High-level Skills</p>
+              </div>
+              <div class="video__item">
+                <div class="video__item-img">
+                  <img src="img/video/video-03.jpg" alt="" />
+                  <div class="playButon">
+                    <img src="img/btn-video.svg" alt="" />
+                  </div>
+                </div>
+                <p class="video__item-caption">Quality Products</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="about pd">
+      <section class="info pd">
         <div class="container">
-          <div class="furniture">
-            <div class="furniture__img">
-              <img src="img/fur.png" alt="" />
+          <div class="info__text textBox">
+            <h2 class="titleMain --yellow">
+              we Do the design of any complexity
+            </h2>
+            <div class="text">
+              <p class="des --white">
+                This is a team of professionals that make the furniture and wood
+                décor high standard. Creating modern designs. Adhering to the
+                global quality standards. And we are doing work with love.
+              </p>
+              <a href="#" class="btnMain"
+                ><img
+                  src="img/play-button.svg"
+                  alt=""
+                  class="icon-playButon"
+                />Watch video</a
+              >
             </div>
-            <div class="furniture__text">
-              <h2 class="title">Furniture</h2>
+          </div>
+        </div>
+      </section>
+      <section class="abount pd">
+        <div class="container">
+          <div class="abount__img">
+            <img src="img/banner/about.jpg" alt="" />
+          </div>
+          <div class="abount__text textBox">
+            <div class="abount__text textInfo">
+              <h2 class="titleMain">About Us</h2>
               <div class="text">
                 <p class="des">
-                  Wooders utilizes materials otherwise left behind. redered
-                  useless in their original intent. By creating news pieces made
+                  We are a team of professionals in the wood processing and the
+                  creation of wooden furniture of the highest class
                 </p>
-                <a href="#" class="btn"
-                  >Learn more
-                  <img src="img/arrow.png" alt="" />
-                </a>
+                <a href="#" class="btn btnpr"
+                  >Learn More<img src="img/arrow.png" alt=""
+                /></a>
               </div>
             </div>
           </div>
@@ -254,37 +248,117 @@
       </section>
       <section class="gallery pd">
         <div class="container">
-          <div class="gallery">
-            <div class="gallery__text textbox">
-              <h2 class="title">Gallery</h2>
-              <p class="des">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Dolores, voluptas. Ipsum natus, cum aut neque, praesentium
-                perspiciatis, molestiae velit quasi tenetur autem et
-                reprehenderit. Nemo commodi fugit rerum corrupti assumenda!
-              </p>
+          <div class="gallery__text textBox --white">
+            <h2 class="titleMain">Gallery</h2>
+            <p class="des">
+              We are a team of professionals in the wood processing and the
+              creation of wooden furniture of the highest class
+            </p>
+          </div>
+          <div class="gallery__grid">
+            <div class="gallery__grid-item item01">
+              <img src="img/thumnail/thum-01.jpg" alt="" />
             </div>
-            <div class="gallery__grid">
-              <div class="gallery__grid-item item1"><img src="" alt="" /></div>
-              <div class="gallery__grid-item item2"><img src="" alt="" /></div>
-              <div class="gallery__grid-item item3"><img src="" alt="" /></div>
-              <div class="gallery__grid-item item4"><img src="" alt="" /></div>
-              <div class="gallery__grid-item item5"><img src="" alt="" /></div>
+            <div class="gallery__grid-item item02">
+              <img src="img/thumnail/thum-02.jpg" alt="" />
+            </div>
+            <div class="gallery__grid-item item03">
+              <img src="img/thumnail/thum-03.jpg" alt="" />
+            </div>
+            <div class="gallery__grid-item item04">
+              <img src="img/thumnail/thum-04.jpg" alt="" />
+            </div>
+            <div class="gallery__grid-item item05">
+              <img src="img/thumnail/thum-05.jpg" alt="" />
             </div>
           </div>
         </div>
       </section>
-      <section class="news pd"></section>
-      <section class="photos pd"></section>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="copy">2016 WOODER, Demo by CFD</div>
-        <div class="logoft">
-          <img src="img/logo.png" alt="" />
+      <section class="news pd">
+        <div class="container">
+          <div class="news__text textBox">
+            <h2 class="titleMain">News</h2>
+            <p class="des">
+              We are a team of professionals in the wood processing and the
+              creation of wooden furniture of the highest class
+            </p>
+          </div>
+          <div class="news__item-wrap">
+            <div class="news__item">
+              <div class="news__item-img">
+                <a href="#"><img src="img/banner/new1.jpg" alt="" /></a>
+              </div>
+              <div class="news__item-text textBox">
+                <h3 class="titleNews">
+                  <a href="#" title="Where does it come from?"
+                    >Where does it come from?</a
+                  >
+                </h3>
+                <p class="des">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literatur
+                </p>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__item-img">
+                <a href="#"><img src="img/banner/new2.jpg" alt="" /></a>
+              </div>
+              <div class="news__item-text textBox">
+                <h3 class="titleNews">
+                  <a
+                    href="#"
+                    title="There are many
+                                variations of passages"
+                    >There are many variations of passages</a
+                  >
+                </h3>
+                <p class="des">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literatur
+                </p>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__item-img">
+                <a href="#"><img src="img/banner/new3.jpg" alt="" /></a>
+              </div>
+              <div class="news__item-text textBox">
+                <h3 class="titleNews">
+                  <a
+                    href="#"
+                    title="It is a long established
+                                    fact that a reader"
+                    >It is a long established fact that a reader</a
+                  >
+                </h3>
+                <p class="des">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literatur
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="backtotop">Back To Top</div>
-      </div>
-    </footer>
+      </section>
+      <!-- <section class="photo pd">
+            <div class="item"><img src="img/gallery/gallery-01.jpg" alt=""></div>
+            <div class="item"><img src="img/gallery/gallery-02.jpg" alt=""></div>
+            <div class="item"><img src="img/gallery/gallery-03.jpg" alt=""></div>
+            <div class="item"><img src="img/gallery/gallery-04.jpg" alt=""></div>
+            <div class="item"><img src="img/gallery/gallery-05.jpg" alt=""></div>
+        </section> -->
+    </main>
   </body>
+  <footer>
+    <div class="container">
+      <div class="copy">© 2016 WOODER, Demo by CFD</div>
+      <div class="logoft">
+        <a href="#"><img src="img/logo.png" alt="" /></a>
+      </div>
+      <div class="btt">
+        <a href="#">Back to top</a>
+      </div>
+    </div>
+  </footer>
 </html>
