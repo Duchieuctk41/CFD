@@ -42,3 +42,25 @@ window.addEventListener("scroll", (e) => {
     }
   });
 });
+
+// Su kien back to top
+
+let positionSectionProduct = document.querySelector(".products").offsetTop;
+
+let backtoTop = document.querySelector(".back-to-top");
+
+backtoTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+window.addEventListener("scroll", () => {
+  let positionScroll = window.pageYOffset;
+  if (positionScroll > positionSectionProduct) {
+    backtoTop.style.display = "block";
+  } else {
+    backtoTop.style.display = "none";
+  }
+});
