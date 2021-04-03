@@ -1,1 +1,118 @@
-// css header
+// css header{
+
+header {
+  width: 100%;
+  max-width: $container-max-width;
+  height: var(--heightHeader);
+  background: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+
+  .container-fluid {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    .hidden {
+      display: none;
+    }
+  }
+
+  .menu {
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    @include transform(translateX(-50%));
+    li {
+      a {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $fz-text;
+        line-height: 22px;
+        color: #fff;
+        opacity: 0.5;
+        text-transform: uppercase;
+        font-family: pb;
+        text-decoration: none;
+        padding: 0 30px;
+        @include transition($t);
+
+        &:hover,
+        &.active {
+          opacity: 1;
+          color: $yellow-cl;
+          @include transition($t);
+        }
+      }
+    }
+  }
+
+  .right {
+    height: 100%;
+    .lang {
+      position: relative;
+      height: 100%;
+      cursor: pointer;
+      &__current {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        span {
+          font-size: $fz-text;
+          line-height: 22px;
+          color: #fff;
+          opacity: 0.5;
+          text-transform: uppercase;
+          font-family: pb;
+          text-decoration: none;
+          margin-right: 8px;
+        }
+        i {
+          img {
+            width: 10px;
+          }
+        }
+      }
+      &__option {
+        background-color: #ddd;
+        position: absolute;
+        right: 0;
+        top: var(--heightHeader);
+        z-index: 198;
+        @include visible(0);
+        @include transition($t);
+        a {
+          padding: 7px 20px;
+          display: block;
+          color: #fff;
+          text-transform: uppercase;
+          @include transition($t);
+          &:first-child {
+            padding-top: 12px;
+          }
+          &:last-child {
+            padding-bottom: 12px;
+          }
+          &:hover {
+            color: $yellow-cl;
+            @include transition($t);
+          }
+        }
+      }
+
+      &:hover {
+        .lang__option {
+          @include visible;
+        }
+      }
+    }
+  }
+}
